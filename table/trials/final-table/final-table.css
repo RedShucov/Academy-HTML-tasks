@@ -1,0 +1,58 @@
+body {
+  width: 350px;
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr th:first-child,
+tr td:first-child {
+  text-align: left;
+}
+
+tr th:nth-child(2),
+tr td:nth-child(2) {
+  text-align: center;
+}
+
+tr th:last-child,
+tr td:last-child {
+  text-align: right;
+}
+
+tr th:first-child,
+tr th:last-child {
+  background-color: darkcyan;
+}
+
+.th-middle {
+  background-color: lightblue;
+}
+
+tr:nth-child(2n+1) td {
+  background-color: lightyellow;
+}
+
+th, td {
+  width: 33%;
+
+  padding: 10px;
+}
+
+th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  color: white;
+}
+
+td {
+  border-bottom: 1px solid lightgray;
+}
