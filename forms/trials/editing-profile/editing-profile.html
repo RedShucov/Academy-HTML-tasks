@@ -11,17 +11,74 @@
 <body>
   <h1>Профиль</h1>
 
-  <form action="https://echo.htmlacademy.ru/courses" method="post">
-    Ваш пол: Мужской Женский
-    Месяц и год рождения:
-    Январь 1990
-    Знакомые технологии:
-    HTML
-    CSS
-    JavaScript
-    Node.js
-    Фото:
-    Сохранить
+  <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+    <div>
+      Ваш пол:
+
+      <label>
+        <input type="radio" name="gender" value="male">
+        <span>Мужской</span>
+      </label>
+
+      <label>
+        <input type="radio" name="gender" value="female" checked>
+        <span>Женский</span>
+      </label>
+    </div>
+
+    <div>
+      Месяц и год рождения:
+
+      <br>
+
+      <select name="month">
+        <option value="january">Январь</option>
+        <option value="february">Февраль</option>
+        <option value="march">Март</option>
+        <option value="april">Апрель</option>
+        <option value="may">Май</option>
+        <option value="june">Июнь</option>
+        <option value="july">Июль</option>
+        <option value="august">Август</option>
+        <option value="september">Сентябрь</option>
+        <option value="october">Октябрь</option>
+        <option value="november">Ноябрь</option>
+        <option value="december">Декабрь</option>
+      </select>
+
+      <select name="year">
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+      </select>
+    </div>
+
+    <div>
+      Знакомые технологии:
+
+      <br>
+
+      <select name="" multiple>
+        <option>HTML</option>
+        <option selected>CSS</option>
+        <option>JavaScript</option>
+        <option>Node.js</option>
+      </select>
+    </div>
+
+    <div>
+      <label>
+        <span>Фото:</span>
+        <input type="file" name="user-photo">
+      </label>
+    </div>
+
+    <div>
+      <input type="submit" value="Сохранить">
+    </div>
   </form>
 </body>
 
